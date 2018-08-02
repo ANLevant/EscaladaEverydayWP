@@ -6,7 +6,7 @@
     "start": "ng serve",
     "build": "ng build",
     "postbuild": "npm run deploy",
-    "predeploy": " rm -r ../../resources/static/content && rimraf ../../resources/static/content && mkdir ../../resources/static/content",
+    "predeploy": "rimraf ../../resources/static/content && mkdir ../../resources/static/content",
     "deploy": "cp -a dist/EscaladaEveryday/. ../../resources/static/content && rm -r dist",
     "test": "ng test",
     "lint": "ng lint",
